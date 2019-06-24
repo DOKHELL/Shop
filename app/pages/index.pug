@@ -1,0 +1,24 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, target-densitydpi=device-dpi, user-scalable=yes, initial-scale=1.0")
+		meta(name="apple-mobile-web-app-capable" content="yes")
+		meta(name="apple-mobile-web-app-status-bar-style" content="black")
+		meta(name="format-detection" content="telephone=no")
+		meta(http-equiv="X-UA-Compatible" content="ie=edge")
+		title SURFHOUS
+		link(href="favicon.ico" rel="shortcut icon")
+		link(href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900|Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet")
+		link(rel="stylesheet" href="css/main.min.css")
+	body
+		div#main
+			include ../modules/header
+			include ../modules/slider
+			include ../modules/basket
+
+
+
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+		script(src="js/libs.min.js")
+		script(src="js/main.js")

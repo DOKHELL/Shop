@@ -1,0 +1,18 @@
+@import "base/normalize";
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "vendors/font-awesome";
+@import "base/fonts";
+@import "base/base";
+@import "components/buttons";
+@import "../libs/slick/slick/slick";
+
+@import "partials/header";
+
+@import "layout/slider";
+@import "layout/basket";
+
+
+@import "partials/footer";
+
+@import "base/media";

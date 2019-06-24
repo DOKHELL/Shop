@@ -1,0 +1,29 @@
+.header {
+  padding: 20px 0 35px;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  &__logo {
+    margin-left: 30px;
+  }
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.social-list {
+  margin-top: 25px;
+  font-size: 0;
+  line-height: 0;
+  &__item {
+    display: inline-block;
+    padding: 0 6px;
+    &:first-child {
+      padding-left: 0;
+    }
+  }
+  &__link {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
