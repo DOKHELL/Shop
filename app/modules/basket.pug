@@ -1,22 +1,17 @@
 section.basket
 	.container
-		table.basket-box
-			tr.basket-box__top
-				td.basket-box__link
-					a(href="#") login
-				td.basket-box__link
-					a(href="#") wish list
-			tr.basket-box__value
-				td.basket-box__price $1,459.50
-					span.basket-box__number 2 items
-				td.basket-box__cencel
-			tr.basket-box__buy
-				td.basket-box__view
-					a(href="#") View cart
-				td.basket-box__view
-					a(href="#") Checkout
-			tr.basket-box__form
-				td
-					form.search-form
-						input(type="text" playsholder="Search").search-form__input
-						button(type="button").search-form__button
+		.basket-box
+			.basket-box__top
+				a(href="#").basket-box__link login
+				a(href="#").basket-box__link wish list
+			.basket-box__value
+				span.basket-box__price $1,459.50
+				a(href="#").basket-box__number 2 items
+				span.basket-box__cancel Edit
+			.basket-box__buy
+				a.basket-box__view(href="#") View cart
+				a.basket-box__view(href="#") Checkout
+			.basket-box__form
+				form.search-form
+					input(type="search" placeholder="Search").search-form__input
+					button(type="button").search-form__button

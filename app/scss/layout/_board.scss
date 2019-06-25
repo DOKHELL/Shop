@@ -1,0 +1,20 @@
+.board-box{
+	background-color: $yellow;
+	padding: 70px 25px;
+	font-family: $rale;		
+	font-weight: 700;	
+	color: $grey;
+	position: absolute;
+	top: 360px;
+	max-width: 270px;
+	&__title{
+		font-size: 30px;
+		margin-bottom: 17px;
+		text-transform: uppercase;
+		line-height: 30px;
+	}
+	&__text{
+		font-size: 18px;
+		line-height: 15px;
+	}
+}
