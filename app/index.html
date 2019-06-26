@@ -13,21 +13,23 @@
     <link rel="stylesheet" href="css/main.min.css">
   </head>
   <body>
-    <div id="main">
-      <header class="header">
-        <div class="container">
-          <div class="header__wrap"><a class="header__logo" href="#"><img src="img/logo.png"></a>
-            <ul class="social-list">
-              <li class="social-list__item"><a class="social-list__link fa-music" href="#"></a></li>
-              <li class="social-list__item"><a class="social-list__link fa-music" href="#"></a></li>
-              <li class="social-list__item"><a class="social-list__link fa-music" href="#"></a></li>
-              <li class="social-list__item"><a class="social-list__link fa-music" href="#"></a></li>
-              <li class="social-list__item"><a class="social-list__link fa-music" href="#"></a></li>
-              <li class="social-list__item"><a class="social-list__link fa-music" href="#"></a></li>
-            </ul>
-          </div>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrap"><a class="header__logo" href="#"><img src="img/logo.png"></a>
+          <ul class="social-list">
+            <li class="social-list__item"><a class="social-list__link fa-music" href="#"></a></li>
+            <li class="social-list__item"><a class="social-list__link fa-music" href="#"></a></li>
+            <li class="social-list__item"><a class="social-list__link fa-music" href="#"></a></li>
+            <li class="social-list__item"><a class="social-list__link fa-music" href="#"></a></li>
+            <li class="social-list__item"><a class="social-list__link fa-music" href="#"></a></li>
+            <li class="dropdown social-list__item"><a class="dropbtn" onclick="dropdowns()">EN</a>
+              <div class="dropdown-content" id="myDropdown"><a href="#">UA</a><a href="#">RU</a></div>
+            </li>
+          </ul>
         </div>
-      </header>
+      </div>
+    </header>
+    <div id="main">
       <section class="slider">
         <div class="slider__wrap">
           <div class="slider-item">
@@ -94,7 +96,155 @@
       </section>
       <section class="layout">
         <div class="container">
-          <div class="content"></div>
+          <div class="content">
+            <section class="new-product product">
+              <div class="product-title">
+                <h2>new product</h2>
+              </div>
+              <div class="product-slide">
+                <ul class="product-list">
+                  <li class="matchheight-h product-list__item label-new"><a class="product-list__link" href="#">
+                      <div class="product-list__image"><img src="img/product-img.jpg"></div>
+                      <div class="product-list__wrap matchheight-w"><span class="product-list__name">Single Thruster 2014</span><span class="product-list__price">€.1,546.70</span></div></a></li>
+                  <li class="matchheight-h product-list__item label-hot"><a class="product-list__link" href="#">
+                      <div class="product-list__image"><img src="img/product-img.jpg"></div>
+                      <div class="product-list__wrap matchheight-w"><span class="product-list__name">Single Thruster 2014</span><span class="product-list__price">€.1,546.70</span><span class="product-list__price-old">€.2,546.70</span></div></a></li>
+                  <li class="matchheight-h product-list__item"><a class="product-list__link" href="#">
+                      <div class="product-list__image"><img src="img/product-img.jpg"></div>
+                      <div class="product-list__wrap matchheight-w"><span class="product-list__name">The White Collection SURFBOARD 2014</span><span class="product-list__price">€.1,546.70</span></div></a></li>
+                  <li class="matchheight-h product-list__item"><a class="product-list__link" href="#">
+                      <div class="product-list__image"><img src="img/product-img.jpg"></div>
+                      <div class="product-list__wrap matchheight-w"><span class="product-list__name">Single Thruster 2014</span><span class="product-list__price">€.1,546.70</span></div></a></li>
+                  <li class="matchheight-h product-list__item"><a class="product-list__link" href="#">
+                      <div class="product-list__image"><img src="img/product-img.jpg"></div>
+                      <div class="product-list__wrap matchheight-w"><span class="product-list__name">Single Thruster 2014</span><span class="product-list__price">€.1,546.70</span></div></a></li>
+                  <li class="matchheight-h product-list__item"><a class="product-list__link" href="#">
+                      <div class="product-list__image"><img src="img/product-img.jpg"></div>
+                      <div class="product-list__wrap matchheight-w"><span class="product-list__name">Single Thruster 2014</span><span class="product-list__price">€.1,546.70</span></div></a></li>
+                </ul>
+                <ul class="product-list">
+                  <li class="matchheight-h product-list__item label-new"><a class="product-list__link" href="#">
+                      <div class="product-list__image"><img src="img/product-img.jpg"></div>
+                      <div class="product-list__wrap matchheight-w"><span class="product-list__name">Single Thruster 2014</span><span class="product-list__price">€.1,546.70</span></div></a></li>
+                  <li class="matchheight-h product-list__item label-hot"><a class="product-list__link" href="#">
+                      <div class="product-list__image"><img src="img/product-img.jpg"></div>
+                      <div class="product-list__wrap matchheight-w"><span class="product-list__name">Single Thruster 2014</span><span class="product-list__price">€.1,546.70</span><span class="product-list__price-old">€.2,546.70</span></div></a></li>
+                  <li class="matchheight-h product-list__item"><a class="product-list__link" href="#">
+                      <div class="product-list__image"><img src="img/product-img.jpg"></div>
+                      <div class="product-list__wrap matchheight-w"><span class="product-list__name">The White Collection SURFBOARD 2014</span><span class="product-list__price">€.1,546.70</span></div></a></li>
+                  <li class="matchheight-h product-list__item"><a class="product-list__link" href="#">
+                      <div class="product-list__image"><img src="img/product-img.jpg"></div>
+                      <div class="product-list__wrap matchheight-w"><span class="product-list__name">Single Thruster 2014</span><span class="product-list__price">€.1,546.70</span></div></a></li>
+                  <li class="matchheight-h product-list__item"><a class="product-list__link" href="#">
+                      <div class="product-list__image"><img src="img/product-img.jpg"></div>
+                      <div class="product-list__wrap"><span class="product-list__name">Single Thruster 2014</span><span class="product-list__price">€.1,546.70</span></div></a></li>
+                  <li class="matchheight-h product-list__item"><a class="product-list__link" href="#">
+                      <div class="product-list__image"><img src="img/product-img.jpg"></div>
+                      <div class="product-list__wrap matchheight-w"><span class="product-list__name">Single Thruster 2014</span><span class="product-list__price">€.1,546.70</span></div></a></li>
+                </ul>
+                <ul class="product-list">
+                  <li class="matchheight-h product-list__item label-new"><a class="product-list__link" href="#">
+                      <div class="product-list__image"><img src="img/product-img.jpg"></div>
+                      <div class="product-list__wrap matchheight-w"><span class="product-list__name">Single Thruster 2014</span><span class="product-list__price">€.1,546.70</span></div></a></li>
+                  <li class="matchheight-h product-list__item label-hot"><a class="product-list__link" href="#">
+                      <div class="product-list__image"><img src="img/product-img.jpg"></div>
+                      <div class="product-list__wrap"><span class="product-list__name">Single Thruster 2014</span><span class="product-list__price">€.1,546.70</span><span class="product-list__price-old">€.2,546.70</span></div></a></li>
+                  <li class="matchheight-h product-list__item"><a class="product-list__link" href="#">
+                      <div class="product-list__image"><img src="img/product-img.jpg"></div>
+                      <div class="product-list__wrap matchheight-w"><span class="product-list__name">The White Collection SURFBOARD 2014</span><span class="product-list__price">€.1,546.70</span></div></a></li>
+                  <li class="matchheight-h product-list__item"><a class="product-list__link" href="#">
+                      <div class="product-list__image"><img src="img/product-img.jpg"></div>
+                      <div class="product-list__wrap matchheight-w"><span class="product-list__name">Single Thruster 2014</span><span class="product-list__price">€.1,546.70</span></div></a></li>
+                  <li class="matchheight-h product-list__item"><a class="product-list__link" href="#">
+                      <div class="product-list__image"><img src="img/product-img.jpg"></div>
+                      <div class="product-list__wrap matchheight-w"><span class="product-list__name">Single Thruster 2014 fhg fg hfgh fg hfg hfg hfgh </span><span class="product-list__price">€.1,546.70</span></div></a></li>
+                  <li class="matchheight-h product-list__item"><a class="product-list__link" href="#">
+                      <div class="product-list__image"><img src="img/product-img.jpg"></div>
+                      <div class="product-list__wrap matchheight-w"><span class="product-list__name">Single Thruster 2014</span><span class="product-list__price">€.1,546.70</span></div></a></li>
+                </ul>
+              </div>
+            </section>
+            <section class="top-product product">
+              <div class="product-title">
+                <h2>top product</h2>
+              </div>
+              <div class="product-slide">
+                <ul class="product-list">
+                  <li class="matchheight-h product-list__item"><a class="product-list__link" href="#">
+                      <div class="product-list__image"><img src="img/product-img.jpg"></div>
+                      <div class="product-list__wrap matchheight-w"><span class="product-list__name">Single Thruster 2014</span><span class="product-list__price">€.1,546.70</span><span class="product-list__price-old">€.2,546.70</span></div></a></li>
+                  <li class="matchheight-h product-list__item"><a class="product-list__link" href="#">
+                      <div class="product-list__image"><img src="img/product-img.jpg"></div>
+                      <div class="product-list__wrap matchheight-w"><span class="product-list__name">Single Thruster 2014</span><span class="product-list__price">€.1,546.70</span></div></a></li>
+                  <li class="matchheight-h product-list__item"><a class="product-list__link" href="#">
+                      <div class="product-list__image"><img src="img/product-img.jpg"></div>
+                      <div class="product-list__wrap matchheight-w"><span class="product-list__name">The White Collection SURFBOARD 2014</span><span class="product-list__price">€.1,546.70</span></div></a></li>
+                </ul>
+                <ul class="product-list">
+                  <li class="matchheight-h product-list__item label-new"><a class="product-list__link" href="#">
+                      <div class="product-list__image"><img src="img/product-img.jpg"></div>
+                      <div class="product-list__wrap matchheight-w"><span class="product-list__name">Single Thruster 2014</span><span class="product-list__price">€.1,546.70</span></div></a></li>
+                  <li class="matchheight-h product-list__item label-hot"><a class="product-list__link" href="#">
+                      <div class="product-list__image"><img src="img/product-img.jpg"></div>
+                      <div class="product-list__wrap matchheight-w"><span class="product-list__name">Single Thruster 2014</span><span class="product-list__price">€.1,546.70</span><span class="product-list__price-old">€.2,546.70</span></div></a></li>
+                  <li class="matchheight-h product-list__item"><a class="product-list__link" href="#">
+                      <div class="product-list__image"><img src="img/product-img.jpg"></div>
+                      <div class="product-list__wrap matchheight-w"><span class="product-list__name">The White Collection SURFBOARD 2014</span><span class="product-list__price">€.1,546.70</span></div></a></li>
+                </ul>
+                <ul class="product-list">
+                  <li class="matchheight-h product-list__item label-new"><a class="product-list__link" href="#">
+                      <div class="product-list__image"><img src="img/product-img.jpg"></div>
+                      <div class="product-list__wrap matchheight-w"><span class="product-list__name">Single Thruster 2014</span><span class="product-list__price">€.1,546.70</span></div></a></li>
+                  <li class="matchheight-h product-list__item label-hot"><a class="product-list__link" href="#">
+                      <div class="product-list__image"><img src="img/product-img.jpg"></div>
+                      <div class="product-list__wrap matchheight-w"><span class="product-list__name">Single Thruster 2014</span><span class="product-list__price">€.1,546.70</span><span class="product-list__price-old">€.2,546.70</span></div></a></li>
+                  <li class="matchheight-h product-list__item"><a class="product-list__link" href="#">
+                      <div class="product-list__image"><img src="img/product-img.jpg"></div>
+                      <div class="product-list__wrap matchheight-w"><span class="product-list__name">The White Collection SURFBOARD 2014</span><span class="product-list__price">€.1,546.70</span></div></a></li>
+                </ul>
+              </div>
+            </section>
+            <section class="sale-product product">
+              <div class="product-title">
+                <h2>sale product</h2>
+              </div>
+              <div class="product-slide">
+                <ul class="product-list">
+                  <li class="matchheight-h product-list__item"><a class="product-list__link" href="#">
+                      <div class="product-list__image"><img src="img/product-img.jpg"></div>
+                      <div class="product-list__wrap matchheight-w"><span class="product-list__name">Single Thruster 2014</span><span class="product-list__price">€.1,546.70</span><span class="product-list__price-old">€.2,546.70</span></div></a></li>
+                  <li class="matchheight-h product-list__item"><a class="product-list__link" href="#">
+                      <div class="product-list__image"><img src="img/product-img.jpg"></div>
+                      <div class="product-list__wrap matchheight-w"><span class="product-list__name">Single Thruster 2014</span><span class="product-list__price">€.1,546.70</span><span class="product-list__price-old">€.2,546.70</span></div></a></li>
+                  <li class="matchheight-h product-list__item"><a class="product-list__link" href="#">
+                      <div class="product-list__image"><img src="img/product-img.jpg"></div>
+                      <div class="product-list__wrap matchheight-w"><span class="product-list__name">The White Collection SURFBOARD 2014</span><span class="product-list__price">€.1,546.70</span><span class="product-list__price-old">€.2,546.70</span></div></a></li>
+                </ul>
+                <ul class="product-list">
+                  <li class="matchheight-h product-list__item label-new"><a class="product-list__link" href="#">
+                      <div class="product-list__image"><img src="img/product-img.jpg"></div>
+                      <div class="product-list__wrap matchheight-w"><span class="product-list__name">Single Thruster 2014</span><span class="product-list__price">€.1,546.70</span></div></a></li>
+                  <li class="matchheight-h product-list__item label-hot"><a class="product-list__link" href="#">
+                      <div class="product-list__image"><img src="img/product-img.jpg"></div>
+                      <div class="product-list__wrap matchheight-w"><span class="product-list__name">Single Thruster 2014</span><span class="product-list__price">€.1,546.70</span><span class="product-list__price-old">€.2,546.70</span></div></a></li>
+                  <li class="matchheight-h product-list__item"><a class="product-list__link" href="#">
+                      <div class="product-list__image"><img src="img/product-img.jpg"></div>
+                      <div class="product-list__wrap matchheight-w"><span class="product-list__name">The White Collection SURFBOARD 2014</span><span class="product-list__price">€.1,546.70</span></div></a></li>
+                </ul>
+                <ul class="product-list">
+                  <li class="matchheight-h product-list__item label-new"><a class="product-list__link" href="#">
+                      <div class="product-list__image"><img src="img/product-img.jpg"></div>
+                      <div class="product-list__wrap matchheight-w"><span class="product-list__name">Single Thruster 2014</span><span class="product-list__price">€.1,546.70</span></div></a></li>
+                  <li class="matchheight-h product-list__item label-hot"><a class="product-list__link" href="#">
+                      <div class="product-list__image"><img src="img/product-img.jpg"></div>
+                      <div class="product-list__wrap matchheight-w"><span class="product-list__name">Single Thruster 2014</span><span class="product-list__price">€.1,546.70</span><span class="product-list__price-old">€.2,546.70</span></div></a></li>
+                  <li class="matchheight-h product-list__item"><a class="product-list__link" href="#">
+                      <div class="product-list__image"><img src="img/product-img.jpg"></div>
+                      <div class="product-list__wrap matchheight-w"><span class="product-list__name">The White Collection SURFBOARD 2014</span><span class="product-list__price">€.1,546.70</span></div></a></li>
+                </ul>
+              </div>
+            </section>
+          </div>
           <aside class="sidebar">
             <section class="menu">
               <ul class="menu-list">
@@ -118,12 +268,12 @@
                 <h2>Now is open!</h2>
               </div>
             </section>
-            <section class="widget">
-              <div class="widget__title">
+            <section class="widget aside-padding">
+              <div class="widget__title title__holder">
                 <h2>Tags Widget</h2>
               </div>
               <ul class="widget-list">
-                <li class="widget-list__item">
+                <li class="widget-list__item widget-list__item-big">
                   <label>
                     <input class="widget-list__checkbox" type="checkbox" placeholer="super"><span>Kitesurf</span>
                   </label>
@@ -173,7 +323,7 @@
                     <input class="widget-list__checkbox" type="checkbox" placeholer="super"><span>Men</span>
                   </label>
                 </li>
-                <li class="widget-list__item">
+                <li class="widget-list__item widget-list__item-big">
                   <label>
                     <input class="widget-list__checkbox" type="checkbox" placeholer="super"><span>Apparel</span>
                   </label>
@@ -213,12 +363,185 @@
                     <input class="widget-list__checkbox" type="checkbox" placeholer="super"><span>Equipment		</span>
                   </label>
                 </li>
-              </ul><a class="widget__link" href="#">view all tags -</a>
+              </ul><a class="widget__link view-link" href="#">view all tags -</a>
+            </section>
+            <section class="article aside-padding">
+              <div class="article__title title__holder">
+                <h2>Articles Experts</h2>
+              </div>
+              <ul class="article-list">
+                <li class="article-list__item"><a class="article-list__link" href="#">LG Spectrum review</a></li>
+                <li class="article-list__item"><a class="article-list__link" href="#">Verizon Droid Xyboard 8.2 and 10.1 review</a></li>
+                <li class="article-list__item"><a class="article-list__link" href="#">Mac mini review (mid 2011)</a></li>
+                <li class="article-list__item"><a class="article-list__link" href="#">Wacom Inkling review</a></li>
+                <li class="article-list__item"><a class="article-list__link" href="#">Sonos Play:3 review</a></li>
+                <li class="article-list__item"><a class="article-list__link" href="#">HTC Radar 4G review</a></li>
+                <li class="article-list__item"><a class="article-list__link" href="#">Canon PowerShot S100 </a></li>
+                <li class="article-list__item"><a class="article-list__link" href="#">Apple iMac </a></li>
+              </ul><a class="article__link view-link" href="#">view all</a>
             </section>
           </aside>
         </div>
       </section>
+      <section class="brand">
+        <div class="container">
+          <ul class="brand-list">
+            <li class="brand-list__item"><a class="brand-list__image" href="#"><img src="img/brand-img.jpg" alt=""></a></li>
+            <li class="brand-list__item"><a class="brand-list__image" href="#"><img src="img/brand-img.jpg" alt=""></a></li>
+            <li class="brand-list__item"><a class="brand-list__image" href="#"><img src="img/brand-img.jpg" alt=""></a></li>
+            <li class="brand-list__item"><a class="brand-list__image" href="#"><img src="img/brand-img.jpg" alt=""></a></li>
+            <li class="brand-list__item"><a class="brand-list__image" href="#"><img src="img/brand-img.jpg" alt=""></a></li>
+            <li class="brand-list__item"><a class="brand-list__image" href="#"><img src="img/brand-img.jpg" alt=""></a></li>
+            <li class="brand-list__item"><a class="brand-list__image" href="#"><img src="img/brand-img.jpg" alt=""></a></li>
+            <li class="brand-list__item"><a class="brand-list__image" href="#"><img src="img/brand-img.jpg" alt=""></a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="instagram">
+        <div class="container">
+          <div class="instagram-wrap">
+            <div class="instagram-title fa-instagram">
+              <h3>Instagram feed: <span>#surfhouse</span></h3>
+            </div>
+            <ul class="instagram-list">
+              <li class="instagram-list__item"><a class="instagram-list__link" href="#"><img src="img/inst-img1.jpg" alt=""></a></li>
+              <li class="instagram-list__item"><a class="instagram-list__link" href="#"><img src="img/inst-img1.jpg" alt=""></a></li>
+              <li class="instagram-list__item"><a class="instagram-list__link" href="#"><img src="img/inst-img1.jpg" alt=""></a></li>
+              <li class="instagram-list__item"><a class="instagram-list__link" href="#"><img src="img/inst-img1.jpg" alt=""></a></li>
+              <li class="instagram-list__item"><a class="instagram-list__link" href="#"><img src="img/inst-img1.jpg" alt=""></a></li>
+              <li class="instagram-list__item"><a class="instagram-list__link" href="#"><img src="img/inst-img1.jpg" alt=""></a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="social">
+        <div class="container">
+          <ul class="social-lists">
+            <li class="social-lists__item"><a class="socials-list__link" href="#"><img src="img/social-img1.jpg" alt=""></a></li>
+            <li class="social-lists__item"><a class="socials-list__link" href="#"><img src="img/social-img2.jpg" alt=""></a></li>
+            <li class="social-lists__item"><a class="socials-list__link" href="#"><img src="img/social-img3.jpg" alt=""></a></li>
+          </ul>
+        </div>
+      </section>
     </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-heading">
+          <div class="footer-heading__holder">
+            <div class="footer-title">
+              <h4>Category</h4>
+            </div>
+            <ul class="holder-list">
+              <li class="holder-list__item"><a class="holder-list__link" href="#">Home</a></li>
+              <li class="holder-list__item"><a class="holder-list__link" href="#">about us</a></li>
+              <li class="holder-list__item"><a class="holder-list__link" href="#">eshop</a></li>
+              <li class="holder-list__item"><a class="holder-list__link" href="#">Features</a></li>
+              <li class="holder-list__item"><a class="holder-list__link" href="#">new collections</a></li>
+              <li class="holder-list__item"><a class="holder-list__link" href="#">blog</a></li>
+              <li class="holder-list__item"><a class="holder-list__link" href="#">contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-heading__holder">
+            <div class="footer-title">
+              <h4>Category</h4>
+            </div>
+            <ul class="holder-list">
+              <li class="holder-list__item"><a class="holder-list__link" href="#">Home</a></li>
+              <li class="holder-list__item"><a class="holder-list__link" href="#">about us</a></li>
+              <li class="holder-list__item"><a class="holder-list__link" href="#">eshop</a></li>
+              <li class="holder-list__item"><a class="holder-list__link" href="#">Features</a></li>
+              <li class="holder-list__item"><a class="holder-list__link" href="#">new collections</a></li>
+              <li class="holder-list__item"><a class="holder-list__link" href="#">blog</a></li>
+              <li class="holder-list__item"><a class="holder-list__link" href="#">contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-heading__holder">
+            <div class="footer-title">
+              <h4>Category</h4>
+            </div>
+            <ul class="holder-list">
+              <li class="holder-list__item"><a class="holder-list__link" href="#">Home</a></li>
+              <li class="holder-list__item"><a class="holder-list__link" href="#">about us</a></li>
+              <li class="holder-list__item"><a class="holder-list__link" href="#">eshop</a></li>
+              <li class="holder-list__item"><a class="holder-list__link" href="#">Features</a></li>
+              <li class="holder-list__item"><a class="holder-list__link" href="#">new collections</a></li>
+              <li class="holder-list__item"><a class="holder-list__link" href="#">blog</a></li>
+              <li class="holder-list__item"><a class="holder-list__link" href="#">contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-heading__news">
+            <div class="footer-title">
+              <h4>Newslatter</h4>
+            </div>
+            <div class="footer-text">
+              <p>Join thousands of other people subscribe to our news</p>
+            </div>
+            <div class="footer-form">
+              <form class="news-form">
+                <input class="news-form__input" type="email" placeholder="Insert email">
+                <input class="news-form__button" type="submit" value="Submit">
+              </form>
+            </div>
+            <div class="footer-payico">
+              <ul class="payico-list">
+                <li class="payico-list__item">
+                  <div class="payico-list__image"><img src="img/visa-img.jpg" alt=""></div>
+                </li>
+                <li class="payico-list__item">
+                  <div class="payico-list__image"><img src="img/visa-img.jpg" alt=""></div>
+                </li>
+                <li class="payico-list__item">
+                  <div class="payico-list__image"><img src="img/visa-img.jpg" alt=""></div>
+                </li>
+                <li class="payico-list__item">
+                  <div class="payico-list__image"><img src="img/visa-img.jpg" alt=""></div>
+                </li>
+                <li class="payico-list__item">
+                  <div class="payico-list__image"><img src="img/visa-img.jpg" alt=""></div>
+                </li>
+                <li class="payico-list__item">
+                  <div class="payico-list__image"><img src="img/visa-img.jpg" alt=""></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-heading__about">
+            <div class="footer-title">
+              <h4>About us</h4>
+            </div>
+            <div class="footer-text">
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
+            </div>
+            <dl class="footer-contact">
+              <dt class="footer-contact__label">Phone:</dt>
+              <dd class="footer-contact__info"><a class="footer-contact__link" href="tel:1-99-342-9876">1-99-342-9876</a></dd>
+            </dl>
+            <dl class="footer-contact">
+              <dt class="footer-contact__label">e-mail:</dt>
+              <dd class="footer-contact__info"><a class="footer-contact__link footer-contact__link-yellow" href="mailto:info@surfhouse.com">info@surfhouse.com</a></dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+      <div class="footer-inner">
+        <div class="container">
+          <div class="footer-area">
+            <div class="footer-copy">
+              <p>2014  SURFHOUSE. All rights reserved - Designed by theuncreativelab.com</p>
+            </div>
+            <ul class="social-list">
+              <li class="social-list__item"><a class="social-list__link fa-music" href="#"></a></li>
+              <li class="social-list__item"><a class="social-list__link fa-music" href="#"></a></li>
+              <li class="social-list__item"><a class="social-list__link fa-music" href="#"></a></li>
+              <li class="social-list__item"><a class="social-list__link fa-music" href="#"></a></li>
+              <li class="social-list__item"><a class="social-list__link fa-music" href="#"></a></li>
+              <li class="social-list__item"><a class="social-list__link fa-music" href="#"></a></li>
+              <li class="social-list__item"><a class="social-list__link fa-music" href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>

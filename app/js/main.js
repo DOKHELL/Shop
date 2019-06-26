@@ -7,6 +7,14 @@ function slider() {
 	});
 };
 
+function sliderProduct() {
+	$('.product-slide').slick({
+		arrows: true,
+		prevArrow: '<button type="button" class="slick-btn slick-prev"></button>',
+		nextArrow: '<button type="button" class="slick-btn slick-next"></button>',
+	});
+};
+
 function initHolderBg() {
 	"use strict";
 	$('.slider__wrap .slider-item .slider-item__img').each(function () {
@@ -25,11 +33,31 @@ function initHolderBg() {
 		}
 	});
 };
+function dropdowns() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+  
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
 
-
+function matchheight() {
+	$(".matchheight-h").matchHeight();
+	$(".matchheight-w").matchHeight();
+  }
 //Runs
 $(document).ready(function () {
 	slider();
 	initHolderBg();
-
+	sliderProduct();
+	matchheight();
 });

@@ -1,0 +1,101 @@
+.footer {
+  background-color: $footer-bg;
+  color: $white;
+  &-text {
+    font-size: 12px;
+  }
+  &-heading {
+    padding: 70px 0 55px;
+    display: flex;
+    &__news {
+      max-width: 270px;
+      display: inline-block;
+      margin-right: 40px;
+      width: 100%;
+    }
+    &__holder {
+      display: inline-block;
+      margin-right: 90px;
+      max-width: 170px;
+    }
+  }
+  &-form {
+    margin-bottom: 30px;
+  }
+  &-title {
+    font-family: $rale;
+    font-weight: 800;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  &-contact {
+    font-size: 14px;
+    &__label,
+    &__info {
+      display: inline-block;
+    }
+    &__info {
+      margin-left: 15px;
+    }
+    &__link {
+      color: $white;
+    }
+    &__link-yellow {
+      color: $yellow;
+    }
+  }
+  &-inner{
+	  background-color: $grey;
+	  padding: 20px 0;
+  }
+  &-copy{
+	  font-size: 12px;
+	  color: $white-color;
+	  p{
+		  margin: 0;
+	  }
+  }
+  &-area{
+	  display: flex;
+	  justify-content: space-between;
+	  .social-list{
+		  margin: 0;
+	  }
+  }
+}
+.holder-list {
+  font-size: 0;
+  line-height: 0;
+  &__link {
+    color: $white;
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+.news-form {
+  &__input {
+    background-color: $yellow;
+    max-width: 180px;
+    width: 100%;
+  }
+  &__button {
+    text-transform: uppercase;
+    padding: 10px;
+    background-color: $black;
+    color: $white;
+    font-size: 13px;
+    margin-left: -2px;
+  }
+}
+.payico-list {
+  font-size: 0;
+  line-height: 0;
+  margin-left: -10px;
+  display: flex;
+  justify-content: space-between;
+  &__image {
+    img {
+      width: auto;
+    }
+  }
+}

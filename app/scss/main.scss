@@ -3,6 +3,7 @@
 @import "abstracts/mixins";
 @import "vendors/font-awesome";
 @import "base/fonts";
+@import "components/helpers";
 @import "base/base";
 @import "components/buttons";
 @import "../libs/slick/slick/slick";
@@ -16,6 +17,11 @@
 @import "layout/menu";
 @import "layout/board-open";
 @import "layout/widget";
+@import "layout/article";
+@import "layout/product-box";
+@import "layout/brand";
+@import "layout/instagram";
+@import "layout/social";
 
 
 @import "partials/footer";

@@ -1,0 +1,63 @@
+.aside-padding {
+  background-color: $white;
+  max-width: 270px;
+  width: 100%;
+  padding: 20px 25px;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.title__holder {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 24px;
+}
+.view-link{
+	font-weight: 900;
+	font-style: italic;
+	font-size: 18px;
+}
+.label-new{
+	position: relative;
+	&:after{
+		content: ''; 
+		top: 0;
+		right: 0;
+		position: absolute;
+		border: 25px solid transparent;
+		border-right: 25px solid $red;
+		border-top: 25px solid $red;
+	}
+	&:before{
+		content: "NEW";
+		position: absolute;
+		top: 5px;
+		right: 5px;
+		font-size: 11px;
+		z-index: 1;
+		color: $white;
+	}
+}
+.label-hot{
+	position: relative;
+	&:after{
+		content: ''; 
+		top: 0;
+		right: 0;
+		position: absolute;
+		border: 25px solid transparent;
+		border-right: 25px solid $yellow;
+		border-top: 25px solid $yellow;
+	}
+	&:before{
+		content: "HOT";
+		position: absolute;
+		top: 5px;
+		right: 5px;
+		font-size: 11px;
+		z-index: 1;
+		color: $black;
+	}
+}

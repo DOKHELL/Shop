@@ -1,0 +1,9 @@
+.article-list{
+	margin-bottom: 10px;
+	&__item{
+		padding: 5px 0;
+	}
+	&__link{
+		color: $grey-light;
+	}
+}

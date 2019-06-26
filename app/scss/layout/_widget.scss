@@ -1,23 +1,16 @@
 .widget {
-  background-color: $white;
-  max-width: 270px;
-  width: 100%;
-  padding: 20px 25px;
-  &__title,&__link{
-	  font-weight: 900;
-	  font-style: italic;
-	  font-size: 24px;
-  }
-  &__link{
-	  font-size: 18px;
-  }
+	margin-bottom: 20px;
 }
 .widget-list {
 	margin-bottom: 10px;
   &__item {
     display: inline-block;
     margin: 2.5px;
-    color: $grey;
+	color: $grey;
+	&-big{
+		font-weight: 700;
+		font-size: 16px;
+	}
     span {
       display: inline-block;
 	  padding: 10px;
@@ -29,7 +22,6 @@
     display: none;
     &:checked ~ span {
 	  background-color: $yellow;
-	  font-weight: 700;
     }
   }
 }
