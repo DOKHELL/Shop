@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, target-densitydpi=device-dpi, user-scalable=yes, initial-scale=1. ">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SURFHOUS</title>
+    <link href="favicon.ico" rel="shortcut icon">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:1 ,2 ,3 ,4 ,5 ,6 ,7 ,8 ,9 |Roboto+Condensed:3 ,3 i,4 ,4 i,7 ,7 i|Roboto:1 ,1 i,3 ,3 i,4 ,4 i,5 ,5 i,7 ,7 i,9 ,9 i&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.min.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrap"><a class="header__logo" href="#"><img src="img/logo.png"></a>
+          <ul class="social-list">
+            <li class="social-list__item"><a class="social-list__link fa-facebook" href="#"></a></li>
+            <li class="social-list__item"><a class="social-list__link fa-twitter" href="#"></a></li>
+            <li class="social-list__item"><a class="social-list__link fa-youtube" href="#"></a></li>
+            <li class="social-list__item"><a class="social-list__link fa-pinterest" href="#"></a></li>
+            <li class="social-list__item"><a class="social-list__link fa-instagram" href="#"></a></li>
+            <li class="dropdown social-list__item"><a class="dropbtn" onclick="dropdowns()">EN</a>
+              <div class="dropdown-content" id="myDropdown"><a href="#">UA</a><a href="#">RU</a></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div id="main">
+      <section class="bg">
+        <div class="bg-image"><img src="img/bg-img.jpg"></div>
+      </section>
+      <section class="basket">
+        <div class="container">
+          <div class="basket-box">
+            <div class="basket-box__top"><a class="basket-box__link" href="#">login</a><a class="basket-box__link" href="#">wish list</a></div>
+            <div class="basket-box__value fa-shopping-cart"><span class="basket-box__price">$1,459.50</span>
+              <div class="basket-box__inner"><a class="basket-box__number" href="#">2 items</a><a class="basket-box__cancel fa-times" href="#">Edit</a></div>
+            </div>
+            <div class="basket-box__buy"><a class="basket-box__view" id="search-fancy" href="javascript:;">View cart</a><a class="basket-box__view" href="#">Checkout</a></div>
+            <div class="basket-box__form">
+              <form class="search-form">
+                <input class="search-form__input" type="search" placeholder="Search">
+                <button class="search-form__button" type="button"></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="layout">
+        <div class="container">
+          <div class="content content-down">
+            <section class="product-info">
+              <div class="product-nav"></div>
+              <div class="product-description">
+                <div class="galery-slide" id="carusel-galery">
+                  <div data-thumb="img/galery-1.jpg"><img src="img/galery-1.jpg"></div>
+                  <div data-thumb="img/galery-2.jpg"><img src="img/galery-2.jpg"></div>
+                  <div data-thumb="img/galery-3.jpg"><img src="img/galery-3.jpg"></div>
+                  <div data-thumb="img/galery-4.jpg"><img src="img/galery-4.jpg"></div>
+                  <div data-thumb="img/galery-5.jpg"><img src="img/galery-5.jpg"></div>
+                </div>
+                <div class="droduct-description__info"></div>
+              </div>
+            </section>
+          </div>
+          <aside class="sidebar">
+            <section class="menu menu-category">
+              <ul class="menu-list">
+                <li class="menu-list__item menu-list__item-gray"><span class="menu-list__link menu-list__link-white">Menu                                         </span></li>
+                <li class="menu-list__item"><a class="menu-list__link" href="#">About</a></li>
+                <li class="menu-list__item"><a class="menu-list__link" href="#">apparel</a></li>
+                <li class="menu-list__item"><a class="menu-list__link" href="#">surf apparel</a></li>
+                <li class="menu-list__item"><a class="menu-list__link" href="#">windsurf</a></li>
+                <li class="menu-list__item"><a class="menu-list__link" href="#">kitesurf</a></li>
+                <li class="menu-list__item"><a class="menu-list__link" href="#">accessories</a></li>
+                <li class="menu-list__item"><a class="menu-list__link" href="#">sale</a></li>
+                <li class="menu-list__item"><a class="menu-list__link" href="#">brands</a></li>
+                <li class="menu-list__item"><a class="menu-list__link" href="#">blog</a></li>
+                <li class="menu-list__item"><a class="menu-list__link" href="#">Gadgets</a></li>
+                <li class="menu-list__item"><a class="menu-list__link" href="#">cantact</a></li>
+              </ul>
+            </section>
+            <section class="menu menu-category">
+              <ul class="menu-list">
+                <li class="menu-list__item menu-list__item-gray"><span class="menu-list__link menu-list__link-white">Category options                                         </span></li>
+                <li class="menu-list__item"><a class="menu-list__link menu-list__link-light" href="#">Men</a></li>
+                <li class="menu-list__item"><a class="menu-list__link menu-list__link-light" href="#">Women</a></li>
+                <li class="menu-list__item"><a class="menu-list__link menu-list__link-light" href="#">Kids</a></li>
+                <li class="menu-list__item"><a class="menu-list__link menu-list__link-light" href="#">wetsuits</a></li>
+                <li class="menu-list__item"><a class="menu-list__link menu-list__link-light" href="#">outerwear</a></li>
+              </ul>
+            </section>
+            <section class="menu menu-category">
+              <ul class="menu-list">
+                <li class="menu-list__item menu-list__item-gray"><span class="menu-list__link menu-list__link-white"> brand options                                        </span></li>
+                <li class="menu-list__item"><a class="menu-list__link menu-list__link-light" href="#">billabong</a></li>
+                <li class="menu-list__item"><a class="menu-list__link menu-list__link-light" href="#">element</a></li>
+                <li class="menu-list__item"><a class="menu-list__link menu-list__link-light" href="#">o’neill</a></li>
+                <li class="menu-list__item"><a class="menu-list__link menu-list__link-light" href="#">oakley</a></li>
+                <li class="menu-list__item"><a class="menu-list__link menu-list__link-light" href="#">reef</a></li>
+                <li class="menu-list__item"><a class="menu-list__link menu-list__link-light" href="#">quiksilver</a></li>
+                <li class="menu-list__item"><a class="menu-list__link menu-list__link-light" href="#">ripcurl</a></li>
+                <li class="menu-list__item"><a class="menu-list__link menu-list__link-light" href="#">jackss</a></li>
+              </ul>
+            </section>
+            <section class="widget aside-padding">
+              <div class="widget__title title__holder">
+                <h2>Tags Widget</h2>
+              </div>
+              <ul class="widget-list">
+                <li class="widget-list__item widget-list__item-big">
+                  <label>
+                    <input class="widget-list__checkbox" type="checkbox" placeholer="super"><span>Kitesurf</span>
+                  </label>
+                </li>
+                <li class="widget-list__item">
+                  <label>
+                    <input class="widget-list__checkbox" type="checkbox" placeholer="super"><span>Super</span>
+                  </label>
+                </li>
+                <li class="widget-list__item">
+                  <label>
+                    <input class="widget-list__checkbox" type="checkbox" placeholer="super"><span>Duper</span>
+                  </label>
+                </li>
+                <li class="widget-list__item">
+                  <label>
+                    <input class="widget-list__checkbox" type="checkbox" placeholer="super"><span>Theme</span>
+                  </label>
+                </li>
+                <li class="widget-list__item">
+                  <label>
+                    <input class="widget-list__checkbox" type="checkbox" placeholer="super"><span>Men</span>
+                  </label>
+                </li>
+                <li class="widget-list__item">
+                  <label>
+                    <input class="widget-list__checkbox" type="checkbox" placeholer="super"><span>Women</span>
+                  </label>
+                </li>
+                <li class="widget-list__item">
+                  <label>
+                    <input class="widget-list__checkbox" type="checkbox" placeholer="super"><span>Equipment</span>
+                  </label>
+                </li>
+                <li class="widget-list__item">
+                  <label>
+                    <input class="widget-list__checkbox" type="checkbox" placeholer="super"><span>Best</span>
+                  </label>
+                </li>
+                <li class="widget-list__item">
+                  <label>
+                    <input class="widget-list__checkbox" type="checkbox" placeholer="super"><span>Accessories</span>
+                  </label>
+                </li>
+                <li class="widget-list__item">
+                  <label>
+                    <input class="widget-list__checkbox" type="checkbox" placeholer="super"><span>Men</span>
+                  </label>
+                </li>
+                <li class="widget-list__item widget-list__item-big">
+                  <label>
+                    <input class="widget-list__checkbox" type="checkbox" placeholer="super"><span>Apparel</span>
+                  </label>
+                </li>
+                <li class="widget-list__item">
+                  <label>
+                    <input class="widget-list__checkbox" type="checkbox" placeholer="super"><span>Super</span>
+                  </label>
+                </li>
+                <li class="widget-list__item">
+                  <label>
+                    <input class="widget-list__checkbox" type="checkbox" placeholer="super"><span>Duper</span>
+                  </label>
+                </li>
+                <li class="widget-list__item">
+                  <label>
+                    <input class="widget-list__checkbox" type="checkbox" placeholer="super"><span>Theme</span>
+                  </label>
+                </li>
+                <li class="widget-list__item">
+                  <label>
+                    <input class="widget-list__checkbox" type="checkbox" placeholer="super"><span>Responsiv</span>
+                  </label>
+                </li>
+                <li class="widget-list__item">
+                  <label>
+                    <input class="widget-list__checkbox" type="checkbox" placeholer="super"><span>Men</span>
+                  </label>
+                </li>
+                <li class="widget-list__item">
+                  <label>
+                    <input class="widget-list__checkbox" type="checkbox" placeholer="super"><span>Women</span>
+                  </label>
+                </li>
+                <li class="widget-list__item">
+                  <label>
+                    <input class="widget-list__checkbox" type="checkbox" placeholer="super"><span>Equipment		</span>
+                  </label>
+                </li>
+              </ul><a class="widget__link view-link" href="#">view all tags -</a>
+            </section>
+            <section class="board-open">
+              <div class="board-open__image"><img src="img/board-open.jpg"></div>
+              <div class="board-open__text">
+                <h2>Now is open!</h2>
+              </div>
+            </section>
+          </aside>
+        </div>
+      </section>
+      <section class="social">
+        <div class="container">
+          <ul class="social-lists">
+            <li class="social-lists__item"><a class="socials-list__link" href="#"><img src="img/social-img1.jpg" alt=""></a></li>
+            <li class="social-lists__item"><a class="socials-list__link" href="#"><img src="img/social-img2.jpg" alt=""></a></li>
+            <li class="social-lists__item"><a class="socials-list__link" href="#"><img src="img/social-img3.jpg" alt=""></a></li>
+          </ul>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-heading">
+            <div class="footer-heading__holder">
+              <div class="footer-title">
+                <h4>Category</h4>
+              </div>
+              <ul class="holder-list">
+                <li class="holder-list__item"><a class="holder-list__link" href="#">Home</a></li>
+                <li class="holder-list__item"><a class="holder-list__link" href="#">about us</a></li>
+                <li class="holder-list__item"><a class="holder-list__link" href="#">eshop</a></li>
+                <li class="holder-list__item"><a class="holder-list__link" href="#">Features</a></li>
+                <li class="holder-list__item"><a class="holder-list__link" href="#">new collections</a></li>
+                <li class="holder-list__item"><a class="holder-list__link" href="#">blog</a></li>
+                <li class="holder-list__item"><a class="holder-list__link" href="#">contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-heading__holder">
+              <div class="footer-title">
+                <h4>Category</h4>
+              </div>
+              <ul class="holder-list">
+                <li class="holder-list__item"><a class="holder-list__link" href="#">Home</a></li>
+                <li class="holder-list__item"><a class="holder-list__link" href="#">about us</a></li>
+                <li class="holder-list__item"><a class="holder-list__link" href="#">eshop</a></li>
+                <li class="holder-list__item"><a class="holder-list__link" href="#">Features</a></li>
+                <li class="holder-list__item"><a class="holder-list__link" href="#">new collections</a></li>
+                <li class="holder-list__item"><a class="holder-list__link" href="#">blog</a></li>
+                <li class="holder-list__item"><a class="holder-list__link" href="#">contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-heading__holder">
+              <div class="footer-title">
+                <h4>Category</h4>
+              </div>
+              <ul class="holder-list">
+                <li class="holder-list__item"><a class="holder-list__link" href="#">Home</a></li>
+                <li class="holder-list__item"><a class="holder-list__link" href="#">about us</a></li>
+                <li class="holder-list__item"><a class="holder-list__link" href="#">eshop</a></li>
+                <li class="holder-list__item"><a class="holder-list__link" href="#">Features</a></li>
+                <li class="holder-list__item"><a class="holder-list__link" href="#">new collections</a></li>
+                <li class="holder-list__item"><a class="holder-list__link" href="#">blog</a></li>
+                <li class="holder-list__item"><a class="holder-list__link" href="#">contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-heading__news">
+              <div class="footer-title">
+                <h4>Newslatter</h4>
+              </div>
+              <div class="footer-text">
+                <p>Join thousands of other people subscribe to our news</p>
+              </div>
+              <div class="footer-form">
+                <form class="news-form">
+                  <input class="news-form__input" type="email" placeholder="Insert email">
+                  <input class="news-form__button" type="submit" value="Submit">
+                </form>
+              </div>
+              <div class="footer-payico">
+                <ul class="payico-list">
+                  <li class="payico-list__item">
+                    <div class="payico-list__image"><img src="img/visa-img.jpg" alt=""></div>
+                  </li>
+                  <li class="payico-list__item">
+                    <div class="payico-list__image"><img src="img/visa-img.jpg" alt=""></div>
+                  </li>
+                  <li class="payico-list__item">
+                    <div class="payico-list__image"><img src="img/visa-img.jpg" alt=""></div>
+                  </li>
+                  <li class="payico-list__item">
+                    <div class="payico-list__image"><img src="img/visa-img.jpg" alt=""></div>
+                  </li>
+                  <li class="payico-list__item">
+                    <div class="payico-list__image"><img src="img/visa-img.jpg" alt=""></div>
+                  </li>
+                  <li class="payico-list__item">
+                    <div class="payico-list__image"><img src="img/visa-img.jpg" alt=""></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-heading__about">
+              <div class="footer-title">
+                <h4>About us</h4>
+              </div>
+              <div class="footer-text">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
+              </div>
+              <dl class="footer-contact">
+                <dt class="footer-contact__label">Phone:</dt>
+                <dd class="footer-contact__info"><a class="footer-contact__link" href="tel:1-99-342-9876">1-99-342-9876</a></dd>
+              </dl>
+              <dl class="footer-contact">
+                <dt class="footer-contact__label">e-mail:</dt>
+                <dd class="footer-contact__info"><a class="footer-contact__link footer-contact__link-yellow" href="mailto:info@surfhouse.com">info@surfhouse.com</a></dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+        <div class="footer-inner">
+          <div class="container">
+            <div class="footer-area">
+              <div class="footer-copy">
+                <p>2014  SURFHOUSE. All rights reserved - Designed by theuncreativelab.com</p>
+              </div>
+              <ul class="social-list">
+                <li class="social-list__item"><a class="social-list__link fa-facebook" href="#"></a></li>
+                <li class="social-list__item"><a class="social-list__link fa-twitter" href="#"></a></li>
+                <li class="social-list__item"><a class="social-list__link fa-youtube" href="#"></a></li>
+                <li class="social-list__item"><a class="social-list__link fa-pinterest" href="#"></a></li>
+                <li class="social-list__item"><a class="social-list__link fa-instagram" href="#"></a></li>
+                <li class="social-list__item"><a class="social-list__link fa-google-plus" href="#"></a></li>
+                <li class="social-list__item"><a class="social-list__link fa-music" href="#"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

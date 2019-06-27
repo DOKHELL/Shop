@@ -43,6 +43,7 @@ gulp.task('scripts', function () {
 	return gulp.src([
 		"app/libs/slick/slick/slick.min.js",
 		"app/libs/matchHeight/jquery.matchHeight.js",
+		"app/libs/fancybox-master/dist/jquery.fancybox.min.js",
 	])
 		.pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
 		.pipe(gulp.dest('app/js')); // Выгружаем в папку app/js 

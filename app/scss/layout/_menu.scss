@@ -2,9 +2,11 @@
 	position: relative;
 	margin-top: -15px;
 	margin-bottom: 20px;
+	&-category{
+		margin-top: 0;
+	}
 }
 .menu-list {
-  max-width: 270px;
   text-transform: uppercase;
   font-weight: 900;
   &__item {
@@ -17,7 +19,10 @@
     padding: 15px 0 15px 35px;
     display: block;
     color: $black;
-    @include transition(background-color color);
+	@include transition(background-color color);
+	&-light{
+		background-color: $blue-light;
+	}
     &-white {
       color: $white;
       padding: 25px 0 25px 35px;

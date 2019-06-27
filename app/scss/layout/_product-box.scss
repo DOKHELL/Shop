@@ -17,7 +17,11 @@
     display: inline-block;
     padding: 10px;
     max-width: 270px;
-    margin: 0 5px 30px 5px;
+	margin: 0 5px 30px 5px;
+	@include transition(background-color);
+	&:hover{
+		background-color: $blue;
+	}
   }
   &__name,
   &__price,

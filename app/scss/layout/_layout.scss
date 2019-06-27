@@ -14,5 +14,8 @@
 	background-color: $white-color;
 	margin-top: -15px;
 	z-index: 1;
+	&-down{
+		margin-top: 0;
+	}
 }
 }

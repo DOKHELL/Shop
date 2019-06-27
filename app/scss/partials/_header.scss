@@ -27,6 +27,10 @@
 	line-height: 18px;
 	font-family: $font;
 	color: $white;
+	@include transition(color);
+	&:hover{
+		color: $red;
+	}
   }
 }
 //Drop-menu lang
@@ -35,16 +39,19 @@
 	color: #fff;
 	font-size: 18px;
 	user-select: none;
-	font-size: 12px;
+	font-size: 14px;
+	font-weight: 700;
 	padding: 0;
 	border: none;
 	cursor: pointer;
 	text-transform: uppercase;
 	position: relative;
 	&:after {
-	  content: "\f063";
+	  content: "\f0dd";
 	  font-family: $font;
 	  font-size: 10px;
+	  position: absolute;
+	  right: -8px;
 	}
   }
   .dropbtn:hover,

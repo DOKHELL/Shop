@@ -4,12 +4,13 @@ section.basket
 			.basket-box__top
 				a(href="#").basket-box__link login
 				a(href="#").basket-box__link wish list
-			.basket-box__value
+			.basket-box__value.fa-shopping-cart
 				span.basket-box__price $1,459.50
-				a(href="#").basket-box__number 2 items
-				span.basket-box__cancel Edit
+				.basket-box__inner
+					a(href="#").basket-box__number 2 items
+					a(href="#").basket-box__cancel.fa-times Edit
 			.basket-box__buy
-				a.basket-box__view(href="#") View cart
+				a.basket-box__view(id="search-fancy" href="javascript:;") View cart
 				a.basket-box__view(href="#") Checkout
 			.basket-box__form
 				form.search-form

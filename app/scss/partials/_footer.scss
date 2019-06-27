@@ -38,7 +38,11 @@
       margin-left: 15px;
     }
     &__link {
-      color: $white;
+	  color: $white;
+	  @include transition(opacity);
+	  &:hover{
+		  opacity: .7;
+	  }
     }
     &__link-yellow {
       color: $yellow;
@@ -69,7 +73,11 @@
   &__link {
     color: $white;
     font-size: 12px;
-    line-height: 18px;
+	line-height: 18px;
+	@include transition(color);
+	&:hover{
+		color: $red;
+	}
   }
 }
 .news-form {
@@ -84,7 +92,11 @@
     background-color: $black;
     color: $white;
     font-size: 13px;
-    margin-left: -2px;
+	margin-left: -2px;
+	@include transition(opacity);
+	&:hover{
+		opacity: .8;
+	}
   }
 }
 .payico-list {

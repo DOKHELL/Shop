@@ -1,11 +1,38 @@
-@mixin transition($properties: all, $duration: .5s, $method: ease-in-out, $delay: 0s) {
-	$value: ();
-	@each $property in $properties {
-	  @if length($value) > 0 {
-		$value: append($value, unquote(",") #{$property} $duration $method $delay);
-	  } @else {
-		$value: append($value, #{$property} $duration $method $delay);
-	  }
-	}
-	transition: $value;
+@mixin transition($properties: all, $duration: 0.5s, $method: ease-in-out, $delay: 0s) {
+  $value: ();
+  @each $property in $properties {
+    @if length($value) > 0 {
+      $value: append($value, unquote(",") #{$property} $duration $method $delay);
+    } @else {
+      $value: append($value, #{$property} $duration $method $delay);
+    }
   }
+  transition: $value;
+}
+
+@mixin bg-fon-image {
+  &:after {
+    content: "";
+    position: absolute;
+    background-color: $bg-colorimg;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+    left: 0;
+    right: 0;
+  }
+}
+@mixin bg-fon-image2 {
+  &:after {
+    content: "";
+    position: absolute;
+    background-color: $bg-colorimg;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 1;
+    left: 0;
+    right: 0;
+  }
+}
