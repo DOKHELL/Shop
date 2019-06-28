@@ -44,6 +44,7 @@ gulp.task('scripts', function () {
 		"app/libs/slick/slick/slick.min.js",
 		"app/libs/matchHeight/jquery.matchHeight.js",
 		"app/libs/fancybox-master/dist/jquery.fancybox.min.js",
+		"app/libs/zoom.js"
 	])
 		.pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
 		.pipe(gulp.dest('app/js')); // Выгружаем в папку app/js 
@@ -114,5 +115,5 @@ gulp.task('watch', function () {
 	gulp.watch(['app/js/main.js', 'app/libs/**/*.js'], gulp.parallel('scripts')); // Наблюдение за главным JS файлом и за библиотеками
 });
 
-gulp.task('default', gulp.parallel('scss', 'browser-sync', 'watch','pug','css-min','scripts'));
+gulp.task('default', gulp.parallel('scss', 'browser-sync', 'watch','pug','scripts'));
 gulp.task('build', gulp.parallel('prebuild', 'clean', 'scss', 'scripts', "img"));

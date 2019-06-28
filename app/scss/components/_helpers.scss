@@ -81,3 +81,30 @@
 		margin: 15px;
 	}
 }
+
+////after line
+
+
+.grey-line:after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	bottom: 0;
+	background: $line;
+	background: linear-gradient(
+	  to right,
+	  $line 0%,
+	  $line 11%,
+	  $line 11%,
+	  $line 11%,
+	  $line 15%,
+	  $line-x 16%,
+	  $line-x 89%,
+	  $line 90%,
+	  $line 90%,
+	  $line 92%,
+	  $line 100%
+	);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e73827', endColorstr='#f02f17', GradientType=1 );
+  }

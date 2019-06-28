@@ -2,15 +2,83 @@ section.product-info
 	.product-nav
 	.product-description
 		.galery-slide#carusel-galery
-			div(data-thumb="img/galery-1.jpg")
+			.galery-slide__image(data-thumb="img/galery-1.jpg")
 				img(src="img/galery-1.jpg")
-			div(data-thumb="img/galery-2.jpg")
+			.galery-slide__image(data-thumb="img/galery-2.jpg")
 				img(src="img/galery-2.jpg")
-			div(data-thumb="img/galery-3.jpg")
+			.galery-slide__image(data-thumb="img/galery-3.jpg")
 				img(src="img/galery-3.jpg")
-			div(data-thumb="img/galery-4.jpg")
+			.galery-slide__image(data-thumb="img/galery-4.jpg")
 				img(src="img/galery-4.jpg")
-			div(data-thumb="img/galery-5.jpg")
+			.galery-slide__image(data-thumb="img/galery-5.jpg")
 				img(src="img/galery-5.jpg")
-		.droduct-description__info
-
+		.product-description__info
+			.product-description__name
+				h2 Peeke cropped
+			span.product-description__review 1 Review(s) | 
+				a(href="#") Add Your Review
+			.product-description__wrap.grey-line
+				span.product-description__price €. 578.50
+				.product-description__stock
+					div.product-description__code Product code: 
+						span 257
+					div.product-description__availability Availability: 
+						span In stock
+			.product-description__owerview.grey-line
+				.product-overview__title
+					h5 Quick owerview:
+				.product-overview__text
+					p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. When an unknown printer took a galley of type.
+			.product-description__size.grey-line
+				.product-size
+					.product-size__title
+						h5 size
+					ul.widget-list
+						li.widget-list__item.widget-list__item
+							label
+								input.widget-list__radio(type="radio" name="rad")
+								span.widget-list__number 25
+						li.widget-list__item
+							label
+								input.widget-list__radio(type="radio" name="rad")
+								span.widget-list__number 26
+						li.widget-list__item
+							label
+								input.widget-list__radio(type="radio" name="rad")
+								span.widget-list__number 27
+						li.widget-list__item
+							label
+								input.widget-list__radio(type="radio" name="rad")
+								span.widget-list__number 28
+						li.widget-list__item
+							label
+								input.widget-list__radio(type="radio" name="rad")
+								span.widget-list__number 29
+						li.widget-list__item
+							label
+								input.widget-list__radio(type="radio" name="rad")
+								span.widget-list__number 30
+						li.widget-list__item
+							label
+								input.widget-list__radio(type="radio" name="rad")
+								span.widget-list__number 31
+						li.widget-list__item
+							label
+								input.widget-list__radio(type="radio" name="rad")
+								span.widget-list__number 32
+						li.widget-list__item
+							label
+								input.widget-list__radio(type="radio" name="rad")
+								span.widget-list__number 33
+			.product-description__length.grey-line
+				.product-length
+					.product-length__title
+						h5 length
+					li.widget-list__item
+						label
+							input.widget-list__radio(type="radio" name="len")
+							span(id="demo").widget-list__number 32
+					li.widget-list__item
+						label
+							input.widget-list__radio(type="radio" name="len")
+							span.widget-list__number 34
