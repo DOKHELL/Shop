@@ -35,9 +35,11 @@ function initHolderBg() {
 		}
 	});
 };
+
 function dropdowns() {
 	document.getElementById("myDropdown").classList.toggle("show");
-}
+};
+
 window.onclick = function (event) {
 	if (!event.target.matches('.dropbtn')) {
 
@@ -50,18 +52,19 @@ window.onclick = function (event) {
 			}
 		}
 	}
-}
+};
 
 function matchheight() {
 	$(".matchheight-h").matchHeight();
 	$(".matchheight-w").matchHeight();
-}
+};
 
 function cartfancy() {
 	$("#search-fancy").on('click', function () {
 		$.fancybox.open('<div class="message"><h2>Hello!</h2><p>You are awesome!</p></div>');
 	});
-}
+};
+
 function initHolderBg2() {
 	"use strict";
 	$('.bg-image').each(function () {
@@ -81,7 +84,6 @@ function initHolderBg2() {
 	});
 };
 
-
 $(function () {
 	$(".galery-slide").slick({
 		autoplay: false,
@@ -90,29 +92,38 @@ $(function () {
 		infinite: false,
 		prevArrow: '<button type="button" class="slick-btn slick-prev"></button>',
 		nextArrow: '<button type="button" class="slick-btn slick-next"></button>',
-		customPaging : function(slider, i) {
+		customPaging: function (slider, i) {
 			var thumb = $(slider.$slides[i]).data('thumb');
-			return '<a><img src="'+thumb+'"></a>';
+			return '<a><img src="' + thumb + '"></a>';
 		},
 	});
-	  var trueHeight,
-		  trueWidth,
-		  img;
-	
-	});
-	function sliderDots() {
-		$('.galery-slide .slick-dots').slick({
-			arrows: false,
-			slidesToShow: 3,
-			slidesToSlide: 1,
-			infinite: false,
-			dots: false,
-			asNavFor: '.galery-slide',
-			prevArrow: '<button type="button" class="slick-btn slick-prev"></button>',
-			nextArrow: '<button type="button" class="slick-btn slick-next"></button>',
-		});
-	};
+	var trueHeight,
+		trueWidth,
+		img;
 
+});
+
+function sliderDots() {
+	$('.galery-slide .slick-dots').slick({
+		arrows: false,
+		slidesToShow: 3,
+		slidesToSlide: 1,
+		infinite: false,
+		dots: false,
+		asNavFor: '.galery-slide',
+		prevArrow: '<button type="button" class="slick-btn slick-prev"></button>',
+		nextArrow: '<button type="button" class="slick-btn slick-next"></button>',
+	});
+};
+
+$('.product-quantity__plus').on('click', function(e) {
+    e.preventDefault();
+    var $this = $(this);
+    var $input = $this.closest('div').find('input');
+    var value = parseInt($input.val());
+    value = value + 1;
+	$input.val(value);
+});
 //Widget
 //del
 function pageWidget(pages) {
@@ -125,10 +136,6 @@ function pageWidget(pages) {
 	widgetStilization.prependTo(".widget_wrap");
 }
 
-$("demo").click(function widgetClick(){
-	document.getElementById("demo").style.color = "red";
-});
-
 //Runs
 $(document).ready(function () {
 	slider();
@@ -138,10 +145,7 @@ $(document).ready(function () {
 	initHolderBg2();
 	cartfancy();
 	sliderDots();
-	$("#slick-btn1,#slick-btn2").click(function(){
-		method1();
-		return false;
-	 });
+
 	pageWidget(['index', 'ico', 'product-page']); ///////////delll
 });
 

@@ -1,6 +1,10 @@
 .product-info {
+	margin-bottom: 40px;
   .galery-slide {
-    max-width: 400px;
+	max-width: 400px;
+	&__image{
+		margin-bottom: 30px;
+	}
     .slick-btn {
       position: absolute;
       bottom: 0;
@@ -47,10 +51,12 @@
     object-fit: cover;
   }
   .slick-dots li {
-    width: 100px !important;
+    width: 90px !important;
     object-fit: cover;
     display: inline-block;
-    margin: 0;
+	margin: 0;
+	margin-left: 5px;
+	margin-right: 5px;
     height: auto;
   }
   .slick-dots li img {
@@ -66,12 +72,6 @@
     -webkit-box-shadow: 0.5px 3px 7px rgba(0, 0, 0, 0.18);
     border: 1px solid rgba(0, 0, 0, 0.05);
   }
-  .slick-dots li:hover img {
-    -webkit-box-shadow: 0.9px 4.9px 21px rgba(0, 0, 0, 0.25);
-    box-shadow: 0.9px 4.9px 21px rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: 0.9px 4.9px 21px rgba(0, 0, 0, 0.25);
-    border: 1px solid #e2e2e2;
-  }
   .slick-dots {
     position: relative;
     text-align: left;
@@ -79,7 +79,11 @@
     bottom: 0;
     display: flex;
     justify-content: center;
-    margin: auto;
+	margin: auto;
+	.slick-active{
+		@include transition(background-color);
+		background-color: $grey-light;
+	}
   }
 }
 .product-description {
@@ -89,6 +93,11 @@
   font-size: 12px;
   &__info {
     max-width: 430px;
+  }
+  &__quantity {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
   }
   &__name {
     h2 {
@@ -114,8 +123,9 @@
   &__size,
   &__owerview,
   &__wrap,
-  &__length {
-    padding: 15px 0;
+  &__length,
+  &__quantity {
+    padding: 10px 0;
     position: relative;
   }
   &__code,
@@ -128,7 +138,8 @@
 .product {
   &-overview,
   &-size,
-  &-length {
+  &-length,
+  &-quantity {
     &__title {
       h5 {
         text-transform: uppercase;
@@ -139,6 +150,44 @@
     }
     &__text {
       color: $title-p;
+    }
+  }
+  &-button {
+    &__cart {
+      align-self: center;
+    }
+  }
+  &-quantity {
+    &__input {
+      background-color: $white;
+      padding: 5px;
+      text-align: center;
+      max-width: 30px;
+      border: 1px solid $line-x;
+    }
+    &__plus {
+      background-color: transparent;
+      position: relative;
+      &:before {
+        font-size: 15px;
+        color: $grey-light;
+        left: 5px;
+        line-height: 15px;
+        transform: translateY(-70%);
+        top: 50%;
+        position: absolute;
+        font-family: $font;
+      }
+    }
+  }
+}
+.add-list {
+  &__link {
+    color: $dark;
+	font-weight: 600;
+	@include transition(opacity);
+    &:hover {
+      opacity: 0.8;
     }
   }
 }

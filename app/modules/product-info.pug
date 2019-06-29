@@ -82,3 +82,17 @@ section.product-info
 						label
 							input.widget-list__radio(type="radio" name="len")
 							span.widget-list__number 34
+			.product-description__quantity
+				.product-quantity
+					.product-quantity__title
+						h5 Quantity
+					input(type="text" value="1" maxlength="3").product-quantity__input
+					button.product-quantity__plus.fa-plus(type="button")
+				a.product-button__cart.btn.btn-big add to cart
+				ul.add-list
+					li.add-list__item
+						a.add-list__link(href="#") + Add to Wishlist
+					li.add-list__item
+						a.add-list__link(href="#") + Add to Compare
+					li.add-list__item
+						a.add-list__link(href="#") + Email to a Friend

@@ -2,9 +2,18 @@
 	padding: 17px 30px;
 	text-transform: uppercase;
 	font-size: 14px;
-	@include transition(background-color color);
+	@include transition(background-color color opacity);
 	&:hover{
 		background-color: $red;
 		color: $white;
+	}
+	&-big{
+		padding: 17px 27px;
+		background-color: $red;
+		color: $white;
+		font-size: 16px;
+		&:hover{
+			opacity: 0.9;
+		}
 	}
 }

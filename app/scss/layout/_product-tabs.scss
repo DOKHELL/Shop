@@ -1,0 +1,55 @@
+#tabs-list__content1,
+#tabs-list__content2,
+#tabs-list__content3,
+#tabs-list__content4 {
+  padding: 10px;
+  border: 1px solid $line-x;
+display: none;
+  p{
+	animation-duration: 2s;
+	animation-fill-mode: both;
+	animation-name: fadeIn;
+	font-size: 12px;
+	line-height: 20px;
+	color: $title-p;
+}
+/* Описываем анимацию свойства opacity */
+ 
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+  }
+.tabs-list {
+	#tabs1:checked~#tabs-list__content1, #tabs2:checked~#tabs-list__content2, #tabs3:checked~#tabs-list__content3, #tabs4:checked~#tabs-list__content4 {
+		display: block;
+	}
+  &__input {
+    display: none;
+    position: absolute;
+    &:checked + label {
+      background-color: $blue;
+      @include transition(background-color);
+    }
+  }
+  &__label {
+	padding: 8px 20px;
+	display: inline-block;
+    text-transform: uppercase;
+    color: $grey;
+	font-weight: 600;
+	cursor: pointer;
+  }
+}
